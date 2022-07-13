@@ -1,3 +1,71 @@
-body {
-   background-color: red;
+:root {
+   --primary-txt-color: #444;
+   --secondary-txt-color: #fff;
+   --other-txt-color: #333;
+
+   --title-txt-color: #555;
+
+   --btn-clr: #22c1d6;
+   --btn-hover-clr: #0d37ac;
+
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* body, html {
+   font-family: 'Oswald', sans-serif;
+} */
+
+.header-container {
+   height: 100vh;
+   width: 100vw;
+   background-image: url(images/bg-img.jpg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.header-text {
+   width: 50vw;
+   color: var(--secondary-txt-color);
+   padding: 15% 0 0 15% ;
+}
+
+.header-text h1 {
+   font-size: 50px;
+   font-family: 'Oswald', sans-serif;
+   font-weight: 400;
+   line-height: 1.3;
+}
+
+.header-text p {
+   padding: 20px 0;
+   line-height: 1.3;
+   font-size: 20px;
+   font-weight: 300;
+   /* font-family: 'Oswald', sans-serif; */
+   font-family: sans-serif;
+}
+
+.donate-now-btn {
+   margin-top: 5px;
+   padding: 15px 25px;
+   font-size: 20px;
+   text-align: center;
+   margin: none;
+   background-color: var(--btn-clr);
+   color: var(--other-txt-color);
+   cursor: pointer;
+   border-radius: 5px;
+   border: none;
+   transition: ease-out 0.4s;
+}
+
+.donate-now-btn:hover {
+   background-color: var(--btn-hover-clr);
+   color: var(--secondary-txt-color);
 }
