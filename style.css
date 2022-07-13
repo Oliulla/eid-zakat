@@ -48,7 +48,8 @@
    font-size: 20px;
    font-weight: 300;
    /* font-family: 'Oswald', sans-serif; */
-   font-family: sans-serif;
+   /* font-family: sans-serif; */
+   font-family: 'Roboto', sans-serif;
 }
 
 .donate-now-btn {
@@ -68,4 +69,62 @@
 .donate-now-btn:hover {
    background-color: var(--btn-hover-clr);
    color: var(--secondary-txt-color);
+}
+
+.container {
+   margin-top: 100px;
+}
+
+.explore-container {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   justify-items: center;
+   align-items: center;
+   margin-left: 15%;
+   margin-right: 15%;
+   grid-gap: 100px;
+}
+
+.explore-btn {
+   margin-top: 30px;
+   padding: 15px 25px;
+   font-size: 20px;
+   text-align: center;
+   margin: none;
+   background-color: var(--btn-clr);
+   color: var(--other-txt-color);
+   cursor: pointer;
+   border-radius: 5px;
+   border: none;
+   transition: ease-out 0.4s;
+}
+
+.explore-btn:hover {
+   background-color: var(--btn-hover-clr);
+   color: var(--secondary-txt-color);
+}
+
+.explore-text h1 {
+   font-size: 45px;
+   color: var(--title-txt-color);
+   line-height: 1.2;
+   padding-bottom: 20px;
+}
+
+.explore-text p {
+   color: var(--title-txt-color);
+   line-height: 1.4;
+   padding-bottom: 20px;
+   font-size: 18px;
+}
+
+.explore-first-img {
+   position: relative;
+}
+
+.video-icon {
+   position: absolute;
+   top: 40%;
+   left: 40%;
+   cursor: pointer;
 }
